@@ -2349,11 +2349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\YoMail\\YoMail\\YoMail.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\prueba\\YopMail-Test\\YoMail\\YoMail.csproj",
       "projectName": "YoMail",
-      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\YoMail\\YoMail\\YoMail.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\Desktop\\prueba\\YopMail-Test\\YoMail\\YoMail.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\source\\repos\\YoMail\\YoMail\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\Desktop\\prueba\\YopMail-Test\\YoMail\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
