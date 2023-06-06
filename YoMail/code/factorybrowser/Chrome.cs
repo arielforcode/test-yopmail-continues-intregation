@@ -12,8 +12,9 @@ namespace YoMail.code.factorybrowser
     {
         public IWebDriver Create()
         {
-            string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
-            IWebDriver driver = new ChromeDriver(path + "/resources/driver/chromedriver.exe");
+            var options = new ChromeOptions();
+            options.AddArgument("--headless=new");
+            var driver = new ChromeDriver(options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
             driver.Manage().Window.Maximize();
             return driver;
