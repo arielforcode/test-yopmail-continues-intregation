@@ -35,7 +35,7 @@ jobs:
           user_email: angelarielcamargomamani@gmail.com
           publish_branch: gh_page
       - name: Test marketplace action
-        uses: simple-elf/allure-report-action@master
+        uses: simple-elf/allure-report-action@main
         if: always()
         id: allure-report
         with:
