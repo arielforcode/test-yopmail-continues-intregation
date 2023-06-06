@@ -1,0 +1,79 @@
+{
+  "uuid": "5eb1333d6d2e4f839909529c6009860c",
+  "historyId": "CrearUsuario",
+  "fullName": "CrearUsuario",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "fv-az950-545"
+    },
+    {
+      "name": "feature",
+      "value": "Test"
+    }
+  ],
+  "links": [],
+  "name": "CrearUsuario",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  Dado que el tengo el sitio web",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686055357827,
+      "stop": 1686055361660
+    },
+    {
+      "name": "When  Ingreso mi correo",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686055361661,
+      "stop": 1686055362649
+    },
+    {
+      "name": "Then  Se vizualiza el panel de correos",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686055362649,
+      "stop": 1686055362749
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686055357818,
+  "stop": 1686055362751
+}
