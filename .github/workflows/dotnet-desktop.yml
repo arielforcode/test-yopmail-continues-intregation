@@ -42,7 +42,7 @@ jobs:
           allure_results: './YoMail/bin/Debug/net6.0/allure-results'
           gh_pages: gh-pages
           allure_report: allure-report
-      - name: Deploy report to Github Pages v1
+      - name: Deploy report to Github Pages 
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
