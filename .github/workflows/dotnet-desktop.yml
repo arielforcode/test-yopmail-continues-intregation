@@ -18,13 +18,16 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
         run: dotnet restore
-      - uses: browser-actions/setup-chrome@latest
-      - run: chrome --version
+      - name: Install Chrome browser
+        run: | 
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222
       - name: Build
         run: dotnet build --configuration Release --no-restore
-      - name: Execute Selenium TC
+      - name: Execute Selenium Test Case
         run: dotnet test --no-restore --verbosity normal
-      - name: "Publish test results"
+      - name: "Publish test selenium results"
         uses: peaceiris/actions-gh-pages@v3.7.3
         if: ${{ always() }}
         with:
@@ -34,7 +37,7 @@ jobs:
           user_name: arielforcode
           user_email: angelarielcamargomamani@gmail.com
           publish_branch: gh_page
-      - name: Test marketplace action
+      - name: Test action
         uses: simple-elf/allure-report-action@master
         if: always()
         id: allure-report
@@ -42,10 +45,10 @@ jobs:
           allure_results: './YoMail/bin/Debug/net6.0/allure-results'
           gh_pages: gh-pages
           allure_report: allure-report
-      - name: Deploy report to Github Pages 
+      - name: Deploy report to Github Pages v1
         if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-report
+          PUBLISH_DIR: allure-report
