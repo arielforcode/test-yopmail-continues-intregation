@@ -1,0 +1,1 @@
+{"CrearUsuario":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"b906be19a0000f2d","reportUrl":"https://arielforcode.github.io/test-yopmail-continues-intregation/11//#testresult/b906be19a0000f2d","status":"passed","time":{"start":1686009549946,"stop":1686009556695,"duration":6749}}]}}
